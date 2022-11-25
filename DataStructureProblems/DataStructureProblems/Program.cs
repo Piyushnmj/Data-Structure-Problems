@@ -6,8 +6,8 @@
         {
             Console.WriteLine("Welcome to Data Structure Program");
 
-            StackClass<char> objStack = new StackClass<char>();
-            objStack.BalancedParenthesis();
+            BankCashCounter objStack = new BankCashCounter();
+            objStack.CashCounter();
             Console.ReadLine();
         }
     }
