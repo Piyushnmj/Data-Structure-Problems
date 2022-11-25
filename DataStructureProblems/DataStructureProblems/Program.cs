@@ -6,8 +6,8 @@
         {
             Console.WriteLine("Welcome to Data Structure Program");
 
-            BankCashCounter objStack = new BankCashCounter();
-            objStack.CashCounter();
+            PalindromeChecker objCheck = new PalindromeChecker();
+            objCheck.CheckForPalindrome();
             Console.ReadLine();
         }
     }
