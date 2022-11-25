@@ -6,8 +6,8 @@
         {
             Console.WriteLine("Welcome to Data Structure Program");
 
-            UnOrderedList<string> objList = new UnOrderedList<string>();
-            objList.SearchWord();
+            StackClass objStack = new StackClass();
+            objStack.BalancedParenthesis();
             Console.ReadLine();
         }
     }
