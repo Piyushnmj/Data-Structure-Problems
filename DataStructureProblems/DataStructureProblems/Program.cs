@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to Data Structure Program");
 
-            StackClass objStack = new StackClass();
+            StackClass<char> objStack = new StackClass<char>();
             objStack.BalancedParenthesis();
             Console.ReadLine();
         }

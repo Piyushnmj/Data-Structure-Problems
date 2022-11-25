@@ -10,27 +10,27 @@ using System.Threading.Tasks;
 
 namespace DataStructureProblems
 {
-    public class StackClass
+    public class StackClass<T>
     {
         public bool BalancedParenthesis()
         {
             string expression = "(5+6)*(7+8)/(4+3)(5+6)*(7+8)/(4+3)";
             Stack<char> objStack = new Stack<char>();
 
-            for (int i = 0; i < expression.Length; i++)
+            foreach (char element in expression)
             {
-                if (expression[i] == '(')
+                if (element == '(')
                 {
-                    objStack.Push(expression[i]);
+                    objStack.Push(element);
                 }
-                if (expression[i] == ')')
+                if (element == ')')
                 {
                     if (objStack.Count == 0)
                     {
-                        Console.WriteLine("\nExpression is not Balanced");
+                        Console.WriteLine("\n Expression is not balanced");
                         return false;
                     }
-                    if (!expression[i].Equals(objStack.Peek()))
+                    if (!objStack.Contains(element))
                     {
                         objStack.Pop();
                     }
